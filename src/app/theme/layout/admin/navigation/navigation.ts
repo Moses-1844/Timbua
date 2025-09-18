@@ -21,14 +21,14 @@ export const NavigationItems: NavigationItem[] = [
     type: 'group',
     icon: 'icon-navigation',
     children: [
-      // {
-      //   id: 'dashboard',
-      //   title: 'Dashboard',
-      //   type: 'item',
-      //   url: '/dashboard',
-      //   icon: 'feather icon-home',
-      //   classes: 'nav-item'
-      // },
+      {
+          id: 'dashboard',
+          title: 'Mineral Finder',
+          type: 'item',
+          url: '/dashboard',
+          icon: 'feather icon-home',
+          classes: 'nav-item'
+        },
       {
       id: 'forms-element',
       title: 'Gis Map',

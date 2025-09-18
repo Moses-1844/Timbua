@@ -1,27 +1,32 @@
-<h2 class="text-xl font-bold mb-6">Mineral Summary</h2>
-
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-10">
-  @for (summary of mineralSummary; track summary) {
-    <div class="flex items-center bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
-      <!-- Icon -->
-      <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-100">
-        <img 
-          [src]="'assets/icon/' + summary.mineral.toLowerCase().replace(' ', '') + '.png'" 
-          alt="{{summary.mineral}} icon" 
-          class="w-8 h-8"
-          onerror="this.src='assets/icon/default.png'"
-        />
-      </div>
-
-      <!-- Text -->
-      <div class="ml-4">
-        <h3 class="text-lg font-semibold text-gray-800">{{ summary.mineral }}</h3>
-        <p class="text-gray-500">{{ summary.count }} sites</p>
-      </div>
+<div class="container mt-3">
+  <!-- Mineral Selection -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="material">Select Mineral:</label>
+      <select
+        class="form-control"
+        [(ngModel)]="selectedMineral"
+        (change)="buildingMarker ? findNearestMineral(buildingMarker.getLatLng(), selectedMineral) : null"
+      >
+        <option value="" disabled>Select a mineral</option>
+        <option *ngFor="let mineral of mineralTypes" [value]="mineral">
+          {{ mineral }}
+        </option>
+      </select>
     </div>
-  }
+  </div>
+
+  <!-- Map -->
+  <div id="map" style="height: 800px; border-radius: 10px;"></div>
+
+  <!-- Nearest Mineral Card -->
+  <div class="card mt-3" *ngIf="nearestMineral">
+    <div class="card-body">
+      <h5 class="card-title">Nearest {{ selectedMineral }} Site</h5>
+      <p><strong>County:</strong> {{ nearestMineral.county }}</p>
+      <p><strong>Site:</strong> {{ nearestMineral.name }}</p>
+      <p><strong>Distance:</strong> {{ nearestMineral.distance | number:'1.0-2' }} km</p>
+      <p><strong>Description:</strong> {{ nearestMineral.description }}</p>
+    </div>
+  </div>
 </div>
-
-<h2 class="text-xl font-bold mb-4">All Mineral Sites (Map View)</h2>
-
-<div id="dashboardMap" style="height: 600px; width: 100%;" class="rounded-xl shadow"></div>

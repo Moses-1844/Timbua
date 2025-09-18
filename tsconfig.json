@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "esModuleInterop": true,                  // ✅ added here
     "noImplicitOverride": true,
     "allowSyntheticDefaultImports": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -18,10 +19,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "skipLibCheck": true,
-    "target": "es2022", // this will auto target to latest by angular cli
+    "target": "es2022", // auto target by Angular CLI
     "module": "es2022",
     "lib": [
-      "es2020", // // this will auto target to latest by angular cli
+      "es2020",
       "dom"
     ],
     "typeRoots": ["node_modules/@types"]
