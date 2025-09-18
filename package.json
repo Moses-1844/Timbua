@@ -28,7 +28,7 @@
     "@ng-bootstrap/ng-bootstrap": "19.0.0",
     "@popperjs/core": "2.11.8",
     "apexcharts": "4.7.0",
-    "bootstrap": "5.3.7",
+    "bootstrap": "^5.3.8",
     "leaflet": "^1.9.4",
     "leaflet-routing-machine": "^3.2.12",
     "ng-apexcharts": "1.16.0",
