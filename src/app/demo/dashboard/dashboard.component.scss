@@ -1,0 +1,37 @@
+.summary-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+.summary-card:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+.summary-card img {
+  width: 32px;
+  height: 32px;
+}
+.summary-card .icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e5f0ff;
+}
+.summary-card .info {
+  margin-left: 12px;
+}
+.summary-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.summary-card p {
+  font-size: 14px;
+  color: #666;
+}

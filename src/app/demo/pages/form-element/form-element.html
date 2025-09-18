@@ -1,0 +1,19 @@
+<div class="filters">
+  <label>
+    Mineral:
+    <select [(ngModel)]="selectedMineral" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let mineral of minerals" [value]="mineral">{{ mineral }}</option>
+    </select>
+  </label>
+
+  <label>
+    County:
+    <select [(ngModel)]="selectedCounty" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let county of counties" [value]="county">{{ county }}</option>
+    </select>
+  </label>
+</div>
+
+<div id="map"></div>
