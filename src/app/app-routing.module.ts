@@ -39,7 +39,12 @@ const routes: Routes = [
       {
         path: 'sample-page',
         loadComponent: () => import('./demo/extra/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
-      }
+      },
+      {
+        path: 'mineral',
+        loadComponent: () => import('./demo/pages/mineral/mineral').then((c) => c.Mineral)
+      },
+      
     ]
   },
   {

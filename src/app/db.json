@@ -1,0 +1,738 @@
+{
+  "minerals": [
+    {
+      "name": "Kakamega Gold Site",
+      "county": "Kakamega",
+      "mineral": "Gold",
+      "coordinates": [
+        0.2827,
+        34.7519
+      ]
+    },
+    {
+      "name": "Migori Copper Site",
+      "county": "Migori",
+      "mineral": "Copper",
+      "coordinates": [
+        -1.0635,
+        34.4731
+      ]
+    },
+    {
+      "county": "Nairobi",
+      "name": "Nairobi Quarry",
+      "coordinates": [
+        -1.2921,
+        36.8219
+      ],
+      "mineral": "Building Stone",
+      "description": "Quarry supplying construction stones to the capital."
+    },
+    {
+      "county": "Nairobi",
+      "name": "Clay Extraction - Ruai",
+      "coordinates": [
+        -1.3,
+        36.9
+      ],
+      "mineral": "Clay",
+      "description": "Clay site supporting brick-making industries."
+    },
+    {
+      "county": "Mombasa",
+      "name": "Coral Limestone Site - Likoni",
+      "coordinates": [
+        -4.0631,
+        39.6728
+      ],
+      "mineral": "Limestone",
+      "description": "Coral limestone mined for cement manufacturing."
+    },
+    {
+      "county": "Mombasa",
+      "name": "Salt Pans - Port Reitz",
+      "coordinates": [
+        -4.05,
+        39.65
+      ],
+      "mineral": "Salt",
+      "description": "Coastal salt extraction site."
+    },
+    {
+      "county": "Kitui",
+      "name": "Coal Mining Site - Mui Basin",
+      "coordinates": [
+        -1.3745,
+        38.0103
+      ],
+      "mineral": "Coal",
+      "description": "Large coal deposits discovered in the Mui Basin."
+    },
+    {
+      "county": "Kitui",
+      "name": "Limestone Quarry - Kanziko",
+      "coordinates": [
+        -1.5123,
+        38.1672
+      ],
+      "mineral": "Limestone",
+      "description": "Limestone used for cement production."
+    },
+    {
+      "county": "Turkana",
+      "name": "Gold Panning - Lodwar",
+      "coordinates": [
+        3.12,
+        35.6
+      ],
+      "mineral": "Gold",
+      "description": "Artisanal gold panning in riverbeds."
+    },
+    {
+      "county": "Turkana",
+      "name": "Gypsum Site - Lokichogio",
+      "coordinates": [
+        4.2,
+        34.35
+      ],
+      "mineral": "Gypsum",
+      "description": "Deposits of gypsum for cement industries."
+    },
+    {
+      "county": "Kisumu",
+      "name": "Kisian Quarry",
+      "coordinates": [
+        -0.0917,
+        34.7679
+      ],
+      "mineral": "Building Stone",
+      "description": "Stone quarry supporting local construction."
+    },
+    {
+      "county": "Kisumu",
+      "name": "Sand Harvesting - Nyando",
+      "coordinates": [
+        -0.15,
+        34.9
+      ],
+      "mineral": "Sand",
+      "description": "River sand for local construction."
+    },
+    {
+      "county": "Machakos",
+      "name": "Mwala Quarry",
+      "coordinates": [
+        -1.5167,
+        37.2667
+      ],
+      "mineral": "Granite",
+      "description": "Granite quarry for road and building projects."
+    },
+    {
+      "county": "Machakos",
+      "name": "Clay Site - Athi River",
+      "coordinates": [
+        -1.45,
+        37.0167
+      ],
+      "mineral": "Clay",
+      "description": "Clay mining for cement and brick-making."
+    },
+    {
+      "county": "Kakamega",
+      "name": "Gold Mines - Ikolomani",
+      "coordinates": [
+        0.2833,
+        34.75
+      ],
+      "mineral": "Gold",
+      "description": "Traditional artisanal gold mining in Ikolomani."
+    },
+    {
+      "county": "Kakamega",
+      "name": "Building Stone Quarry - Malava",
+      "coordinates": [
+        0.45,
+        34.8667
+      ],
+      "mineral": "Building Stone",
+      "description": "Stone extraction for construction in Western Kenya."
+    },
+    {
+      "county": "Meru",
+      "name": "Granite Quarry - Timau",
+      "coordinates": [
+        0.05,
+        37.15
+      ],
+      "mineral": "Granite",
+      "description": "Granite mining in the highlands of Meru."
+    },
+    {
+      "county": "Meru",
+      "name": "Gemstones - Igembe",
+      "coordinates": [
+        0.2333,
+        37.95
+      ],
+      "mineral": "Gemstones",
+      "description": "Gemstones such as garnet and tourmaline found in Meru."
+    },
+    {
+      "county": "Kwale",
+      "name": "Titanium Site - Msambweni",
+      "coordinates": [
+        -4.4733,
+        39.4742
+      ],
+      "mineral": "Titanium",
+      "description": "Large titanium deposits exploited for export."
+    },
+    {
+      "county": "Kwale",
+      "name": "Limestone Site - Shimba Hills",
+      "coordinates": [
+        -4.3,
+        39.3667
+      ],
+      "mineral": "Limestone",
+      "description": "Limestone mining supporting cement industries."
+    },
+    {
+      "county": "Baringo",
+      "name": "Fluorspar Mines - Kerio Valley",
+      "coordinates": [
+        0.85,
+        35.6
+      ],
+      "mineral": "Fluorspar",
+      "description": "Major fluorspar deposits mined in Kerio Valley."
+    },
+    {
+      "county": "Baringo",
+      "name": "Diatomite Site - Kabarnet",
+      "coordinates": [
+        0.4833,
+        35.9833
+      ],
+      "mineral": "Diatomite",
+      "description": "Diatomite extraction for industrial uses."
+    },
+    {
+      "county": "Nyeri",
+      "name": "Building Stone Quarry - Othaya",
+      "coordinates": [
+        -0.55,
+        36.95
+      ],
+      "mineral": "Building Stone",
+      "description": "Quarry producing stones for central Kenya construction."
+    },
+    {
+      "county": "Nyeri",
+      "name": "Gemstone Site - Mukurwe-ini",
+      "coordinates": [
+        -0.5333,
+        37.0833
+      ],
+      "mineral": "Gemstones",
+      "description": "Small-scale mining of tourmaline and garnet."
+    },
+    {
+      "county": "Kilifi",
+      "name": "Limestone Site - Vipingo",
+      "coordinates": [
+        -3.75,
+        39.75
+      ],
+      "mineral": "Limestone",
+      "description": "Major limestone site for Bamburi Cement."
+    },
+    {
+      "county": "Kilifi",
+      "name": "Salt Pans - Gongoni",
+      "coordinates": [
+        -3.3833,
+        40.0167
+      ],
+      "mineral": "Salt",
+      "description": "Large salt harvesting pans along the coast."
+    },
+    {
+      "county": "Kajiado",
+      "name": "Gypsum Mining - Kajiado Central",
+      "coordinates": [
+        -1.85,
+        36.7833
+      ],
+      "mineral": "Gypsum",
+      "description": "Gypsum extraction for cement and plaster production."
+    },
+    {
+      "county": "Kajiado",
+      "name": "Building Stone Quarry - Isinya",
+      "coordinates": [
+        -1.6833,
+        36.8333
+      ],
+      "mineral": "Building Stone",
+      "description": "Quarry producing construction stones for Nairobi and beyond."
+    },
+    {
+      "county": "Taita Taveta",
+      "name": "Tsavo Gemstones - Voi",
+      "coordinates": [
+        -3.4,
+        38.5667
+      ],
+      "mineral": "Gemstones",
+      "description": "Rich in tsavorite garnets and other gemstones."
+    },
+    {
+      "county": "Taita Taveta",
+      "name": "Iron Ore - Kishushe",
+      "coordinates": [
+        -3.2667,
+        38.3833
+      ],
+      "mineral": "Iron Ore",
+      "description": "Large deposits of iron ore in Kishushe hills."
+    },
+    {
+      "county": "Narok",
+      "name": "Gold Mining - Lolgorian",
+      "coordinates": [
+        -1.05,
+        34.8167
+      ],
+      "mineral": "Gold",
+      "description": "Artisanal gold mining activities in Transmara region."
+    },
+    {
+      "county": "Narok",
+      "name": "Fluorspar Deposits - Suswa",
+      "coordinates": [
+        -1.05,
+        36.35
+      ],
+      "mineral": "Fluorspar",
+      "description": "Potential fluorspar deposits in the Suswa region."
+    },
+    {
+      "county": "Baringo",
+      "name": "Fluorspar Mining - Kerio Valley",
+      "coordinates": [
+        0.85,
+        35.6
+      ],
+      "mineral": "Fluorspar",
+      "description": "Fluorspar mining site supporting steel and chemical industries."
+    },
+    {
+      "county": "Baringo",
+      "name": "Pumice Quarry - Kabarnet",
+      "coordinates": [
+        0.4833,
+        35.9833
+      ],
+      "mineral": "Pumice",
+      "description": "Pumice extraction for lightweight construction materials."
+    },
+    {
+      "county": "Meru",
+      "name": "Chromite Deposits - Nkubu",
+      "coordinates": [
+        0.1,
+        37.65
+      ],
+      "mineral": "Chromite",
+      "description": "Small-scale chromite deposits supporting metalworks."
+    },
+    {
+      "county": "Meru",
+      "name": "Building Stone Quarry - Maua",
+      "coordinates": [
+        0.2333,
+        37.9333
+      ],
+      "mineral": "Building Stone",
+      "description": "Quarry for local construction stone supply."
+    },
+    {
+      "county": "Migori",
+      "name": "Gold Mining - Macalder",
+      "coordinates": [
+        -1,
+        34.65
+      ],
+      "mineral": "Gold",
+      "description": "Historic gold mines with artisanal and commercial activity."
+    },
+    {
+      "county": "Migori",
+      "name": "Copper Site - Masara",
+      "coordinates": [
+        -0.95,
+        34.7
+      ],
+      "mineral": "Copper",
+      "description": "Copper mineralization associated with gold deposits."
+    },
+    {
+      "county": "West Pokot",
+      "name": "Pozzolana Quarry - Ortum",
+      "coordinates": [
+        1.5167,
+        35.1167
+      ],
+      "mineral": "Pozzolana",
+      "description": "Pozzolana mined for blending cement."
+    },
+    {
+      "county": "West Pokot",
+      "name": "Limestone Deposits - Kapenguria",
+      "coordinates": [
+        1.25,
+        35.1167
+      ],
+      "mineral": "Limestone",
+      "description": "Limestone resources for cement industries."
+    },
+    {
+      "county": "Elgeyo Marakwet",
+      "name": "Fluorspar Belt - Kimwarer",
+      "coordinates": [
+        0.1833,
+        35.5667
+      ],
+      "mineral": "Fluorspar",
+      "description": "Part of the Kerio Valley fluorspar mining region."
+    },
+    {
+      "county": "Elgeyo Marakwet",
+      "name": "Iron Ore - Chepsirei",
+      "coordinates": [
+        0.5,
+        35.5333
+      ],
+      "mineral": "Iron Ore",
+      "description": "Iron ore deposits under exploration."
+    },
+    {
+      "county": "Garissa",
+      "name": "Gypsum Deposits - Dadaab",
+      "coordinates": [
+        0.05,
+        40.3167
+      ],
+      "mineral": "Gypsum",
+      "description": "Gypsum reserves used in cement and plaster production."
+    },
+    {
+      "county": "Garissa",
+      "name": "Building Stone - Garissa Town",
+      "coordinates": [
+        -0.4569,
+        39.6583
+      ],
+      "mineral": "Building Stone",
+      "description": "Quarry for construction stones in the semi-arid region."
+    },
+    {
+      "county": "Embu",
+      "name": "Granite Quarry - Mbeere",
+      "coordinates": [
+        -0.5333,
+        37.45
+      ],
+      "mineral": "Granite",
+      "description": "Granite quarry supporting local construction."
+    },
+    {
+      "county": "Embu",
+      "name": "Clay Site - Siakago",
+      "coordinates": [
+        -0.4167,
+        37.6333
+      ],
+      "mineral": "Clay",
+      "description": "Clay deposits for brick and pottery industries."
+    },
+    {
+      "county": "Homa Bay",
+      "name": "Gold Panning - Rongo",
+      "coordinates": [
+        -0.75,
+        34.6
+      ],
+      "mineral": "Gold",
+      "description": "Artisanal gold mining site along riverbeds."
+    },
+    {
+      "county": "Homa Bay",
+      "name": "Building Stone Quarry - Ndhiwa",
+      "coordinates": [
+        -0.6167,
+        34.5667
+      ],
+      "mineral": "Building Stone",
+      "description": "Stone quarry serving local construction projects."
+    },
+    {
+      "county": "Bungoma",
+      "name": "Limestone Site - Webuye",
+      "coordinates": [
+        0.6167,
+        34.7667
+      ],
+      "mineral": "Limestone",
+      "description": "Limestone for nearby cement production."
+    },
+    {
+      "county": "Bungoma",
+      "name": "Clay Extraction - Chwele",
+      "coordinates": [
+        0.7167,
+        34.7
+      ],
+      "mineral": "Clay",
+      "description": "Clay mining for bricks and tiles."
+    },
+    {
+      "county": "Taita Taveta",
+      "name": "Tsavorite Gem Mine - Voi",
+      "coordinates": [
+        -3.4,
+        38.5667
+      ],
+      "mineral": "Gemstones",
+      "description": "World-famous tsavorite gemstone mines."
+    },
+    {
+      "county": "Taita Taveta",
+      "name": "Iron Ore - Kishushe",
+      "coordinates": [
+        -3.4167,
+        38.4667
+      ],
+      "mineral": "Iron Ore",
+      "description": "Iron ore deposits under mining and export."
+    },
+    {
+      "county": "Isiolo",
+      "name": "Soda Ash Site - Kinna",
+      "coordinates": [
+        0.35,
+        38.9167
+      ],
+      "mineral": "Soda Ash",
+      "description": "Soda ash deposits for chemical and industrial use."
+    },
+    {
+      "county": "Isiolo",
+      "name": "Gemstone Mining - Isiolo Town",
+      "coordinates": [
+        0.35,
+        37.5833
+      ],
+      "mineral": "Gemstones",
+      "description": "Variety of semi-precious gemstones extracted."
+    },
+    {
+      "county": "Murang'a",
+      "name": "Granite Quarry - Maragua",
+      "coordinates": [
+        -0.7833,
+        37.1333
+      ],
+      "mineral": "Granite",
+      "description": "Granite for building and road construction."
+    },
+    {
+      "county": "Murang'a",
+      "name": "Sand Harvesting - Sagana River",
+      "coordinates": [
+        -0.7833,
+        37.2167
+      ],
+      "mineral": "Sand",
+      "description": "Sand harvested from the Sagana River for construction."
+    },
+    {
+      "county": "Kericho",
+      "name": "Building Stone - Kipkelion",
+      "coordinates": [
+        -0.1667,
+        35.3667
+      ],
+      "mineral": "Building Stone",
+      "description": "Stone quarry serving tea estates and towns."
+    },
+    {
+      "county": "Kericho",
+      "name": "Clay Site - Belgut",
+      "coordinates": [
+        -0.35,
+        35.35
+      ],
+      "mineral": "Clay",
+      "description": "Clay deposits used in pottery and tiles."
+    },
+    {
+      "county": "Siaya",
+      "name": "Gold Panning - Bondo",
+      "coordinates": [
+        0.05,
+        34.2667
+      ],
+      "mineral": "Gold",
+      "description": "Artisanal gold panning along riverbeds."
+    },
+    {
+      "county": "Siaya",
+      "name": "Sand Harvesting - Yala River",
+      "coordinates": [
+        0.1333,
+        34.3667
+      ],
+      "mineral": "Sand",
+      "description": "River sand harvested for building projects."
+    },
+    {
+      "county": "Marsabit",
+      "name": "Fluorspar Deposits - Moyale",
+      "coordinates": [
+        3.5167,
+        39.05
+      ],
+      "mineral": "Fluorspar",
+      "description": "Fluorspar reserves used in steel and aluminum industries."
+    },
+    {
+      "county": "Marsabit",
+      "name": "Salt Pans - Chalbi Desert",
+      "coordinates": [
+        3.2167,
+        37.95
+      ],
+      "mineral": "Salt",
+      "description": "Salt pans within Chalbi Desert supporting local trade."
+    },
+    {
+      "county": "Kirinyaga",
+      "name": "Building Stone Quarry - Sagana",
+      "coordinates": [
+        -0.5,
+        37.2
+      ],
+      "mineral": "Building Stone",
+      "description": "Building stones quarried for local construction."
+    },
+    {
+      "county": "Kirinyaga",
+      "name": "Sand Harvesting - Thiba River",
+      "coordinates": [
+        -0.6,
+        37.2833
+      ],
+      "mineral": "Sand",
+      "description": "Sand extraction from Thiba River."
+    },
+    {
+      "county": "Laikipia",
+      "name": "Gemstone Mining - Nanyuki",
+      "coordinates": [
+        0.0167,
+        37.0667
+      ],
+      "mineral": "Gemstones",
+      "description": "Mining of rubies, sapphires, and other gemstones."
+    },
+    {
+      "county": "Laikipia",
+      "name": "Building Stone Quarry - Rumuruti",
+      "coordinates": [
+        0.2667,
+        36.5333
+      ],
+      "mineral": "Building Stone",
+      "description": "Stone quarry serving Laikipia region."
+    },
+    {
+      "id": 1758528860429,
+      "name": "Osiri-gold",
+      "county": "Migori",
+      "mineral": "gold",
+      "coordinates": [
+        null,
+        34.7453
+      ]
+    }
+  ],
+  "counties": [
+    "Mombasa",
+    "Kwale",
+    "Kilifi",
+    "Tana River",
+    "Lamu",
+    "Taita Taveta",
+    "Garissa",
+    "Wajir",
+    "Mandera",
+    "Marsabit",
+    "Isiolo",
+    "Meru",
+    "Tharaka-Nithi",
+    "Embu",
+    "Kitui",
+    "Machakos",
+    "Makueni",
+    "Nyandarua",
+    "Nyeri",
+    "Kirinyaga",
+    "Murang'a",
+    "Kiambu",
+    "Turkana",
+    "West Pokot",
+    "Samburu",
+    "Trans Nzoia",
+    "Uasin Gishu",
+    "Elgeyo-Marakwet",
+    "Nandi",
+    "Baringo",
+    "Laikipia",
+    "Nakuru",
+    "Narok",
+    "Kajiado",
+    "Kericho",
+    "Bomet",
+    "Kakamega",
+    "Vihiga",
+    "Bungoma",
+    "Busia",
+    "Siaya",
+    "Kisumu",
+    "Homa Bay",
+    "Migori",
+    "Kisii",
+    "Nyamira",
+    "Nairobi"
+  ],
+   "mineralsList": [
+    "Gold",
+    "Copper",
+    "Limestone",
+    "Fluorspar",
+    "Iron",
+    "Coal",
+    "Gypsum",
+    "Soda Ash",
+    "Manganese",
+    "Salt",
+    "Graphite",
+    "Phosphate",
+    "Titanium",
+    "Zinc",
+    "Silica Sand"
+   ]
+}

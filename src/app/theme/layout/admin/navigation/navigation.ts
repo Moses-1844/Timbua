@@ -37,6 +37,14 @@ export const NavigationItems: NavigationItem[] = [
       classes: 'nav-item',
       icon: 'feather icon-file-text'
       },
+      {
+        id: 'mineral',
+        title: 'Mineral Data',
+        type: 'item',
+        url: '/mineral',
+        classes: 'nav-item',
+        icon: 'feather icon-map-pin'
+        }
     ]
   },  
   // {

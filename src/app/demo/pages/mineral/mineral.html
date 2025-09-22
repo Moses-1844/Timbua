@@ -1,0 +1,129 @@
+<div class="container">
+  <!-- Header -->
+  <div class="row mb-4">
+    <div class="col">
+      <h2 class="text-center text-primary"><i class="bi bi-gem"></i> Minerals Management</h2>
+      <p class="text-center text-muted">Add and manage mineral records with filters</p>
+    </div>
+  </div>
+
+  <!-- Add Mineral Form -->
+  <div class="row mb-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title mb-0"><i class="bi bi-plus-circle"></i> Add New Mineral</h5>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="addMineral()" class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" [(ngModel)]="newMineral.name" name="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="county" class="form-label">County</label>
+              <select class="form-select" id="county" [(ngModel)]="newMineral.county" name="county" required>
+                <option value="">Select County</option>
+                <option *ngFor="let c of counties" [value]="c">{{ c }}</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="mineral" class="form-label">Mineral</label>
+              <input type="text" class="form-control" id="mineral" [(ngModel)]="newMineral.mineral" name="mineral" required>
+            </div>
+            <div class="col-md-3">
+              <label for="lat" class="form-label">Latitude</label>
+              <input type="number" class="form-control" id="lat" [(ngModel)]="newMineral.coordinates[0]" name="lat" step="any">
+            </div>
+            <div class="col-md-3">
+              <label for="lng" class="form-label">Longitude</label>
+              <input type="number" class="form-control" id="lng" [(ngModel)]="newMineral.coordinates[1]" name="lng" step="any">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Add Mineral</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters & Table -->
+  <div class="row">
+    <div class="col-9">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="card-title mb-0"><i class="bi bi-table"></i> Minerals List</h5>
+          <span class="badge bg-primary">{{filteredMinerals.length}} records</span>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>County</th>
+                  <th>Mineral</th>
+                  <th>Coordinates</th>
+                  <th class="text-center">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let m of filteredMinerals">
+                  <td>{{ m.name }}</td>
+                  <td>{{ m.county }}</td>
+                  <td><span class="badge bg-info text-dark">{{ m.mineral }}</span></td>
+                  <td>
+                    <span *ngIf="m.coordinates[0] && m.coordinates[1]">
+                      {{ m.coordinates[0] | number:'1.4-4' }}, {{ m.coordinates[1] | number:'1.4-4' }}
+                    </span>
+                    <span *ngIf="!m.coordinates[0] || !m.coordinates[1]" class="text-muted">No coordinates</span>
+                  </td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-danger" (click)="deleteMineral(m.id)">
+                      <i class="bi bi-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr *ngIf="filteredMinerals.length === 0">
+                  <td colspan="5" class="text-center text-muted py-4">
+                    <i class="bi bi-inbox" style="font-size: 2rem;"></i>
+                    <p class="mt-2">No minerals match your filters.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filters on the right -->
+    <div class="col-3">
+      <div class="card">
+        <div class="card-header"><i class="bi bi-funnel"></i> Filters</div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label class="form-label">Search by Name</label>
+            <input type="text" class="form-control" [(ngModel)]="searchText" (input)="applyFilters()" placeholder="Enter name...">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Filter by County</label>
+            <select class="form-select" [(ngModel)]="selectedCounty" (change)="applyFilters()">
+              <option value="">All Counties</option>
+              <option *ngFor="let c of counties" [value]="c">{{ c }}</option>
+            </select>
+          </div>
+<div class="mb-3">
+  <label class="form-label">Filter by Mineral</label>
+  <select class="form-select" [(ngModel)]="selectedMineral" (change)="applyFilters()">
+    <option value="">All Minerals</option>
+    <option *ngFor="let m of mineralTypes" [value]="m">{{ m }}</option>
+  </select>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
